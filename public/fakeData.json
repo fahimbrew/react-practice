@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "category": "Electronics",
+      "price": 25.99,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Yoga Mat",
+      "category": "Fitness",
+      "price": 19.99,
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Ceramic Mug",
+      "category": "Kitchenware",
+      "price": 8.49,
+      "inStock": false
+    },
+    {
+      "id": 4,
+      "name": "Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 45.00,
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Notebook",
+      "category": "Stationery",
+      "price": 3.99,
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "name": "Desk Lamp",
+      "category": "Furniture",
+      "price": 29.99,
+      "inStock": false
+    }
+  ]
+  
