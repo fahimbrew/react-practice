@@ -7,6 +7,7 @@ import Carts from "./components/Carts/Carts";
 function App() {
   const [products,setProducts] = useState([]);
   const [selectedProducts,setSelectedProducts] = useState([]);
+  const [balance,setBalance] = useState(500);
   
   const handleSelectedProduct = product =>{
     // console.log(product);
@@ -16,13 +17,15 @@ function App() {
     }else{
       alert('Already Added')
     }
+    setBalance(balance-product.price);
     
   }
  
-  const handleDelete = id =>{
+  const handleDelete = (id,price) =>{
     // console.log(id);
     const remainingCart = selectedProducts.filter(p=>p.id!==id);
     setSelectedProducts(remainingCart);
+    setBalance(balance+price);
   }
 
   useEffect(()=>{
@@ -42,6 +45,7 @@ function App() {
      ></AllProducts>
      <Carts selectedProducts = {selectedProducts}
              handleDelete = {handleDelete}
+             balance = {balance}
      
      ></Carts>
      </section>

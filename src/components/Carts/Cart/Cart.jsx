@@ -7,7 +7,7 @@ const Cart = ({selectedProduct,handleDelete}) => {
         <div className="border p-5 flex gap-4 items-center rounded-3xl m-4">
             <h3>{name}</h3>
             <p><small>${price}</small></p>
-            <button onClick={()=>handleDelete(selectedProduct.id)} className="btn btn-sm btn-error">Delete</button>
+            <button onClick={()=>handleDelete(selectedProduct.id,selectedProduct.price)} className="btn btn-sm btn-error">Delete</button>
         </div>
     );
 };
